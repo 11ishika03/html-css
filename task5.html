@@ -1,0 +1,91 @@
+<html>
+<head>
+    <style>
+         tr{border-color: white;}
+        th, td {
+          padding: 0px;
+        }
+        </style>
+<title>Rgistration form</title>
+</head>
+<body>
+<form align="center" method="get" action="get">
+<table border="1" align="center" width="500">
+<caption><h1 style="color:blue;">Registration form</h1></caption>
+<tr>
+<th>First name</th>
+<td width="0"><input type="text" title="First name" /></td>
+</tr>
+<tr>
+<th>Last name</th>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<th>Email</th>
+<td><input type="email"  /></td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password"  /></td>
+</tr>
+<tr>
+<th>Re-Enter Password</th>
+<td><input type="password"/></td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td>
+Male<input type="radio" name="g" value="m"/>
+Female<input type="radio" name="g" value="f"/>
+</td>
+</tr>
+<tr>
+<th>Age:</th>
+<td><input type="number"/></td>
+</tr>
+<tr>
+<th>Phone Number</th>
+<td><input type="text"/></td>
+</tr>
+<tr>
+<th>Address</th>
+<td><textarea rows="8" cols="20"></textarea></td>
+</tr>
+<tr >
+<th>State</th>
+<td><input type="text"  /></td>
+ 
+</tr>
+<tr>
+<th>Country</th>
+<td><select name = "dropdown">
+    <option value ="choose your country">Choose your country</option>
+    <option value = "India">India</option>
+    <option value = "China">China</option>
+    <option value = "US">US</option>
+    <option value = "Japan">Japan</option>
+    <option value = "Russia">Russia</option>
+    <option value = "Korea">Korea</option>
+ </select></td>
+</tr>
+<tr>
+<th>Languages known</th>
+<td>
+<input type="checkbox" name="x[]" value="h"/>English
+<input type="checkbox" name="x[]" value="h2"/>Kannada
+<input type="checkbox" name="x[]" value="h3"/>Hindi
+<input type="checkbox" name="x[]" value="h4"/>Telugu
+</td>
+</tr>
+
+     
+    <td colspan="10"><input type="checkbox" name="x[]" value="h5"/>Hereby I declare all the given details are true</td>
+ <tr>
+    <td align="right" colspan="15">Log in to <a href = "/html/index.htm" target = "_top">Ethnus</a> website</td>
+ </tr>
+</table>
+<br>
+<input type = "submit" name = "Register" value = "Register" />
+</form>
+</body>
+</html>

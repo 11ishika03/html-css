@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: rgb(135, 64, 64);
+        }
+
+        .container {
+            background-color: rgb(154, 23, 23);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:     </label>
+                <input type="text" id="name" name="name" size="47%" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:     </label>
+                
+                <input type="email" id="email" name="email" size="47%" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:     </label>
+                <input type="password" id="password" name="password" size="42%" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:     </label>
+                <input type="tel" id="phone" name="phone" size="38%" required>
+            </div>
+
+            <div class="form-group">
+                Gender:    Male:<input type="radio" name="g" value="m"/>
+                Female:<input type="radio" name="g" value="f"/>
+                Others:<input type="radio" name="g" value="o"/>
+            </div>
+
+            <div class="form-group">
+                <label for="language">Language:     </label>
+                <select id="language" name="language">
+                    <option value="language">Select Language</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="zipcode">Zip Code:     </label>
+                <input type="text" id="zipcode" name="zipcode" size="44%" required>
+            </div>
+            <div class="form-group">
+                <label for="about">About:     </label>
+                <textarea id="about" name="about" rows="2" columns="6"   required></textarea>
+            </div>
+      
+            <button style="width: 100%;" type ="submit" class="register-button">Register</button>
+        </form>
+    </div>
+</body>
+</html>
